@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <!-- Mirrored from demos.codexcoder.com/labartisan/html/nft/enftomark/explore.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Nov 2024 12:23:50 GMT -->
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="author" content="codexcoder" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Meta tags for Social Media(Better SEO) -->
+    <!-- <meta property="og:title" content=""> -->
+    <!-- <meta property="og:type" content=""> -->
+    <!-- <meta property="og:url" content=""> -->
+    <!-- <meta property="og:image" content=""> -->
+
+    <!-- site favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- ====== All css file ========= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/icofont.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/lightcase.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- site title -->
+    <title>Cultura</title>
+  </head>
+
+  <body>
+    <!-- preloader start here -->
+    <div class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-icon">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- preloader ending here -->
+
+    <!-- ===============// header section start here \\================= -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="header__content">
+          <div class="header__logo">
+            <a href="index.html">
+              <img
+                src="assets/images/logo/logo.png"
+                alt="logo"
+                style="width: 150px; margin: 20px"
+              />
+            </a>
+          </div>
+
+          <div class="header__menu ms-auto">
+            <ul class="header__nav mb-0">
+              <!-- Home -->
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="home.html" role="button">
+                  <i class="fas fa-home"></i>
+                  <span class="sr-only">Home</span>
+                </a>
+              </li>
+
+              <!-- Marketplace -->
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="explore.html">
+                  <i class="fas fa-store"></i>
+                  <span class="sr-only">Marketplace</span>
+                </a>
+              </li>
+
+              <!-- Profile -->
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="profile.html">
+                  <i class="fas fa-user"></i>
+                  <span class="sr-only">Profile</span>
+                </a>
+              </li>
+
+              <!-- Reel -->
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="reel.html">
+                  <i class="fas fa-play-circle"></i>
+                  <span class="sr-only">Reel</span>
+                </a>
+              </li>
+
+              <!-- Historical -->
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="historical.html">
+                  <i class="fas fa-history"></i>
+                  <span class="sr-only">Historical</span>
+                </a>
+              </li>
+
+              <!-- Collaboration -->
+              <li class="header__nav-item active">
+                <a class="header__nav-link" href="collaboration.html">
+                  <i class="fas fa-handshake"></i>
+                  <span class="sr-only">Collaboration</span>
+                </a>
+              </li>
+
+              <!-- Dashboard -->
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="dashboard.html">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <span class="sr-only">Dashboard</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__actions">
+            <div class="header__action header__action--search">
+              <button class="header__action-btn" type="button">
+                <i class="icofont-search-1"></i>
+              </button>
+            </div>
+
+            <div class="header__action header__action--profile">
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-offset="-100,10"
+                >
+                  <span><i class="icofont-user"></i></span>
+                  <span class="d-none d-md-inline">Alex Joe</span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="author.html"
+                      ><span class="me-1"><i class="icofont-options"></i></span>
+                      Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="activity.html"
+                      ><span class="me-1"
+                        ><i class="icofont-lightning-ray"></i
+                      ></span>
+                      Activity</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="signup.html"
+                      ><span class="me-1"
+                        ><i class="icofont-space-shuttle"></i
+                      ></span>
+                      Sign Up</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="signin.html"
+                      ><span class="me-1"><i class="icofont-login"></i></span>
+                      Sign In</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Sign Out
+                      <span class="ms-1"><i class="icofont-logout"></i></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="wallet-btn">
+              <a href="wallet.html"
+                ><span><i class="icofont-wallet"></i></span>
+                <span class="d-none d-md-inline">234.98ETH</span>
+              </a>
+            </div>
+          </div>
+
+          <button class="menu-trigger header__btn" id="menu05">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- ===============//header section end here \\================= -->
+
+    <!-- ==========Page Header Section Start Here========== -->
+    <section class="page-header-section style-1">
+      <div class="container">
+        <div class="page-header-content">
+          <div class="page-header-inner">
+            <div class="page-title">
+              <h2>Collaboration</h2>
+            </div>
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li class="active">All-authors</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========Page Header Section Ends Here========== -->
+
+    <!-- ==========explore Section start Here========== -->
+    <section class="explore-section padding-top padding-bottom">
+      <div class="container">
+        <div class="section-header justify-content-between">
+          <div class="header-title">
+            <span><i class="icofont-light-bulb"></i></span>
+            <h3>All Authors</h3>
+          </div>
+          <div class="nft-search">
+            <div class="form-floating nft-search-input">
+              <input
+                type="text"
+                class="form-control"
+                id="nftSearch"
+                placeholder="Search Author"
+              />
+              <label for="nftSearch">Search Author</label>
+              <button type="button"><i class="icofont-search-1"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="section-wrapper">
+          <div class="explore-wrapper">
+            <div class="row justify-content-center gx-4 gy-3">
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="nft-item style-2">
+                  <div class="nft-inner">
+                    <div class="nft-thumb">
+                      <img
+                        loading="lazy"
+                        src="assets/images/nft-item/style-2/01.jpg"
+                        alt="nft-img"
+                      />
+                    </div>
+                    <div class="nft-content">
+                      <div class="author-thumb">
+                        <a href="author.html" class="veryfied"
+                          ><img
+                            loading="lazy"
+                            src="assets/images/seller/04.png"
+                            alt="author-img"
+                        /></a>
+                      </div>
+                      <div class="author-details">
+                        <h5><a href="author.html">Gihan Fernindo</a></h5>
+                        <p class="nft-price yellow-color">$23,002.98</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="nft-item style-2">
+                  <div class="nft-inner">
+                    <div class="nft-thumb">
+                      <img
+                        loading="lazy"
+                        src="assets/images/nft-item/style-2/02.jpg"
+                        alt="nft-img"
+                      />
+                    </div>
+                    <div class="nft-content">
+                      <div class="author-thumb">
+                        <a href="author.html" class="veryfied"
+                          ><img
+                            loading="lazy"
+                            src="assets/images/seller/04.gif"
+                            alt="author-img"
+                        /></a>
+                      </div>
+                      <div class="author-details">
+                        <h5><a href="author.html">X31le eko Fernindo</a></h5>
+                        <p class="nft-price yellow-color">$23,002.98</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="nft-item style-2">
+                  <div class="nft-inner">
+                    <div class="nft-thumb">
+                      <img
+                        loading="lazy"
+                        src="assets/images/nft-item/style-2/03.jpg"
+                        alt="nft-img"
+                      />
+                    </div>
+                    <div class="nft-content">
+                      <div class="author-thumb">
+                        <a href="author.html" class="veryfied"
+                          ><img
+                            loading="lazy"
+                            src="assets/images/seller/03.png"
+                            alt="author-img"
+                        /></a>
+                      </div>
+                      <div class="author-details">
+                        <h5><a href="author.html">Jhon Doe </a></h5>
+                        <p class="nft-price yellow-color">$23,002.98</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="nft-item style-2">
+                  <div class="nft-inner">
+                    <div class="nft-thumb">
+                      <img
+                        loading="lazy"
+                        src="assets/images/nft-item/style-2/04.jpg"
+                        alt="nft-img"
+                      />
+                    </div>
+                    <div class="nft-content">
+                      <div class="author-thumb">
+                        <a href="author.html" class="veryfied"
+                          ><img
+                            loading="lazy"
+                            src="assets/images/seller/07.gif"
+                            alt="author-img"
+                        /></a>
+                      </div>
+                      <div class="author-details">
+                        <h5><a href="author.html">Alex joe</a></h5>
+                        <p class="nft-price yellow-color">$23,002.98</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="nft-item style-2">
+                  <div class="nft-inner">
+                    <div class="nft-thumb">
+                      <img
+                        loading="lazy"
+                        src="assets/images/nft-item/style-2/06.jpg"
+                        alt="nft-img"
+                      />
+                    </div>
+                    <div class="nft-content">
+                      <div class="author-thumb">
+                        <a href="author.html" class="veryfied"
+                          ><img
+                            loading="lazy"
+                            src="assets/images/seller/02.png"
+                            alt="author-img"
+                        /></a>
+                      </div>
+                      <div class="author-details">
+                        <h5><a href="author.html">Imao XO9 </a></h5>
+                        <p class="nft-price yellow-color">$23,002.98</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="nft-item style-2">
+                  <div class="nft-inner">
+                    <div class="nft-thumb">
+                      <img
+                        loading="lazy"
+                        src="assets/images/nft-item/style-2/04.jpg"
+                        alt="nft-img"
+                      />
+                    </div>
+                    <div class="nft-content">
+                      <div class="author-thumb">
+                        <a href="author.html" class="veryfied"
+                          ><img
+                            loading="lazy"
+                            src="assets/images/seller/06.png"
+                            alt="author-img"
+                        /></a>
+                      </div>
+                      <div class="author-details">
+                        <h5><a href="author.html">Gihan Fernindo</a></h5>
+                        <p class="nft-price yellow-color">$23,002.98</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="nft-item style-2">
+                  <div class="nft-inner">
+                    <div class="nft-thumb">
+                      <img
+                        loading="lazy"
+                        src="assets/images/nft-item/style-2/01.jpg"
+                        alt="nft-img"
+                      />
+                    </div>
+                    <div class="nft-content">
+                      <div class="author-thumb">
+                        <a href="author.html" class="veryfied"
+                          ><img
+                            loading="lazy"
+                            src="assets/images/seller/04.gif"
+                            alt="author-img"
+                        /></a>
+                      </div>
+                      <div class="author-details">
+                        <h5><a href="author.html">5eo Le1 </a></h5>
+                        <p class="nft-price yellow-color">$23,002.98</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="nft-item style-2">
+                  <div class="nft-inner">
+                    <div class="nft-thumb">
+                      <img
+                        loading="lazy"
+                        src="assets/images/nft-item/style-2/07.jpg"
+                        alt="nft-img"
+                      />
+                    </div>
+                    <div class="nft-content">
+                      <div class="author-thumb">
+                        <a href="author.html" class="veryfied"
+                          ><img
+                            loading="lazy"
+                            src="assets/images/seller/07.png"
+                            alt="author-img"
+                        /></a>
+                      </div>
+                      <div class="author-details">
+                        <h5><a href="author.html">Gihan Fernindo</a></h5>
+                        <p class="nft-price yellow-color">$23,002.98</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="load-btn mt-5">
+              <a href="all-authors-2.html" class="default-btn move-bottom">
+                <span>Load More</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========explore Section ends Here========== -->
+
+    <!-- ===============//seller section start here \\================= -->
+    <section class="seller-section padding-bottom">
+      <div class="container">
+        <div class="section-header">
+          <div class="header-title">
+            <span><i class="icofont-users"></i></span>
+            <h3>New Authors</h3>
+          </div>
+          <div class="header-content d-flex flex-wrap align-items-center">
+            <ul class="seller-filter-btns d-flex flex-wrap mb-0">
+              <li class="seller-filter-btn">
+                <select class="buyer-seller-select">
+                  <option value="*">show all</option>
+                  <option value=".seller">Seller</option>
+                  <option value=".buyer">Buyer</option>
+                </select>
+              </li>
+              <li class="seller-days-btn">
+                <select class="days-select">
+                  <option value="*">show all</option>
+                  <option value=".today">Today</option>
+                  <option value=".day-2">2 Days</option>
+                  <option value=".day-3">3 Days</option>
+                  <option value=".day-4">4 Days</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-wrapper">
+          <div class="seller-wrapper">
+            <div class="seller-item seller today">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">21</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html" class=""
+                        ><img
+                          src="assets/images/seller/01.gif"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Andrea Guido</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item buyer day-2">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">34</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/01.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">goxio dom</a></h5>
+                      <p>$12,002.48</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item seller day-4">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">31</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/02.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">pter qido</a></h5>
+                      <p>$3,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item buyer day-3">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">05</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/03.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Andrea Guido</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item seller day3">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">09</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/04.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">rox zipper</a></h5>
+                      <p>$20,02.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item buyer day-2">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">01</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/05.gif"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Andrea Guido</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item seller today">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">30</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/06.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Rassel Mrh </a></h5>
+                      <p>$93,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item buyer day-4">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">01</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/03.gif"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">holder don</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item seller day-2">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">91</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/07.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">annae de</a></h5>
+                      <p>$3,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="load-btn mt-5">
+            <a href="all-authors-2.html" class="default-btn move-bottom">
+              <span>Load More</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============//seller section end here \\================= -->
+
+    <!-- ===============//seller section start here \\================= -->
+    <section class="seller-section padding-bottom">
+      <div class="container">
+        <div class="section-header">
+          <div class="header-title">
+            <span><i class="icofont-badge"></i></span>
+            <h3>Top Authors</h3>
+          </div>
+          <div class="header-content d-flex flex-wrap align-items-center">
+            <ul class="seller-filter-btns d-flex flex-wrap mb-0">
+              <li class="seller-filter-btn">
+                <select class="buyer-seller-select">
+                  <option value="*">show all</option>
+                  <option value=".seller">Seller</option>
+                  <option value=".buyer">Buyer</option>
+                </select>
+              </li>
+              <li class="seller-days-btn">
+                <select class="days-select">
+                  <option value="*">show all</option>
+                  <option value=".today">Today</option>
+                  <option value=".day-2">2 Days</option>
+                  <option value=".day-3">3 Days</option>
+                  <option value=".day-4">4 Days</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-wrapper">
+          <div class="seller-wrapper">
+            <div class="seller-item seller today">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">21</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html" class=""
+                        ><img
+                          src="assets/images/seller/01.gif"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Andrea Guido</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item buyer day-2">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">34</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/01.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">goxio dom</a></h5>
+                      <p>$12,002.48</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item seller day-4">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">31</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/02.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">pter qido</a></h5>
+                      <p>$3,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item buyer day-3">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">05</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/03.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Andrea Guido</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item seller day3">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">09</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/04.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">rox zipper</a></h5>
+                      <p>$20,02.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item buyer day-2">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">01</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/05.gif"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Andrea Guido</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item seller today">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">30</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/06.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Rassel Mrh </a></h5>
+                      <p>$93,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item buyer day-4">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">01</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/03.gif"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">holder don</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item seller day-2">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">91</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/07.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">annae de</a></h5>
+                      <p>$3,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item buyer today">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">01</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/05.gif"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Andrea Guido</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item seller day-4">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">02</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/09.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Xomzat paul</a></h5>
+                      <p>$34,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item buyer day-3">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">51</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/11.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Andrea Guido</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item seller day-2">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">21</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/06.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">helen exo</a></h5>
+                      <p>$2,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item buyer day-4">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">61</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/06.png"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Pickas Guido</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seller-item seller today">
+              <div class="seller-inner">
+                <div class="seller-part">
+                  <p class="assets-number">33</p>
+                  <div class="assets-owner">
+                    <div class="owner-thumb veryfied">
+                      <a href="author.html"
+                        ><img
+                          src="assets/images/seller/10.gif"
+                          alt="seller-img"
+                      /></a>
+                    </div>
+                    <div class="owner-content">
+                      <h5><a href="author.html">Tom cat</a></h5>
+                      <p>$23,002.98</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="follow-part">
+                  <button class="btn-follow follow-state">
+                    <span class="follow"
+                      ><i class="fa fa-user-plus"></i> Follow</span
+                    >
+                    <span class="unfollow">Unfollow</span>
+                    <span class="following">Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="load-btn mt-5">
+            <a href="all-authors-2.html" class="default-btn move-bottom">
+              <span>Load More</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============//seller section end here \\================= -->
+
+    <!-- ===============//footer section start here \\================= -->
+    <footer class="footer-section">
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="text-center py-4 mb-0">
+            All rights reserved &copy; Enftomark || Design By:
+            <a href="https://themeforest.net/user/codexcoder">codexcoder</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ===============//footer section end here \\================= -->
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-stylish-up"></i></a>
+    <!-- scrollToTop ending here -->
+
+    <!-- All Scripts -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+  </body>
+
+  <!-- Mirrored from demos.codexcoder.com/labartisan/html/nft/enftomark/all-authors.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Nov 2024 12:23:57 GMT -->
+</html>
