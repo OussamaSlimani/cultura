@@ -3438,13 +3438,13 @@ aside {
 .page-header-section.style-1 {
   background-color: #030010;
   border: none;
-  padding-top: 125px;
-  padding-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 @media (min-width: 992px) {
   .page-header-section.style-1 {
-    padding-top: 185px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 80px;
   }
 }
 .page-header-section.style-1
