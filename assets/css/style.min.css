@@ -163,7 +163,7 @@ body {
   line-height: 1.5;
   padding: 0;
   margin: 0;
-  background-color: #040b29;
+  background-color: #000;
   -webkit-font-smoothing: antialiased;
 }
 body.home-2 {
@@ -1678,6 +1678,7 @@ ol {
   padding-inline: 1rem;
   text-transform: uppercase;
 }
+
 @media (min-width: 768px) {
   .section-header.style-4 h3 {
     padding-inline: 2rem;
@@ -3437,13 +3438,13 @@ aside {
 .page-header-section.style-1 {
   background-color: #030010;
   border: none;
-  padding-top: 125px;
-  padding-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 @media (min-width: 992px) {
   .page-header-section.style-1 {
-    padding-top: 185px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 80px;
   }
 }
 .page-header-section.style-1
