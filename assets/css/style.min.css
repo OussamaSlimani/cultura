@@ -163,7 +163,7 @@ body {
   line-height: 1.5;
   padding: 0;
   margin: 0;
-  background-color: #040b29;
+  background-color: #000;
   -webkit-font-smoothing: antialiased;
 }
 body.home-2 {
@@ -1678,6 +1678,7 @@ ol {
   padding-inline: 1rem;
   text-transform: uppercase;
 }
+
 @media (min-width: 768px) {
   .section-header.style-4 h3 {
     padding-inline: 2rem;
