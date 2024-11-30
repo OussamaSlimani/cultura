@@ -1,357 +1,325 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <!-- Mirrored from demos.codexcoder.com/labartisan/html/nft/enftomark/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Nov 2024 12:23:52 GMT -->
-  <head>
-    <meta charset="utf-8" />
+<!-- Mirrored from demos.codexcoder.com/labartisan/html/nft/enftomark/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Nov 2024 12:23:52 GMT -->
 
-    <meta name="author" content="codexcoder" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
 
-    <!-- Meta tags for Social Media(Better SEO) -->
-    <!-- <meta property="og:title" content=""> -->
-    <!-- <meta property="og:type" content=""> -->
-    <!-- <meta property="og:url" content=""> -->
-    <!-- <meta property="og:image" content=""> -->
+  <meta name="author" content="codexcoder" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- site favicon -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <!-- Meta tags for Social Media(Better SEO) -->
+  <!-- <meta property="og:title" content=""> -->
+  <!-- <meta property="og:type" content=""> -->
+  <!-- <meta property="og:url" content=""> -->
+  <!-- <meta property="og:image" content=""> -->
 
-    <!-- ====== All css file ========= -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/icofont.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/lightcase.css" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/style.min.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- site title -->
-    <title>Cultura</title>
+  <!-- site favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden; /* Disable scrolling */
-      }
-      .reel-section {
-        height: 100vh;
-        position: relative;
-      }
-      .main-reel {
-        height: 100%;
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-      }
-      .reel-item {
-        scroll-snap-align: start;
-        height: 100vh;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000;
-        color: #fff;
-      }
-      .reel-video {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-      .reel-info {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        color: white;
-      }
-      .reel-actions {
-        position: absolute;
-        right: 20px;
-        bottom: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .reel-actions i {
-        font-size: 24px;
-        margin-bottom: 20px;
-        color: #fff;
-        cursor: pointer;
-      }
-      .reel-actions i:hover {
-        color: #ff6347;
-      }
-    </style>
-  </head>
+  <!-- ====== All css file ========= -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/icofont.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/lightcase.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <!-- site title -->
+  <title>Cultura</title>
 
-  <body>
-    <!-- preloader start here -->
-    <div class="preloader">
-      <div class="preloader-inner">
-        <div class="preloader-icon">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /* Disable scrolling */
+    }
+
+    .reel-section {
+      height: 100vh;
+      position: relative;
+    }
+
+    .main-reel {
+      height: 100%;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+
+    .reel-item {
+      scroll-snap-align: start;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .reel-video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .reel-info {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+    }
+
+    .reel-actions {
+      position: absolute;
+      right: 20px;
+      bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .reel-actions i {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .reel-actions i:hover {
+      color: #ff6347;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- preloader start here -->
+  <div class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-icon">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- preloader ending here -->
+
+  <!-- ===============// header section start here \\================= -->
+  <header class="header">
+    <div class="container-fluid">
+      <div class="header__content">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="assets/images/logo/logo.png" alt="logo" style="width: 150px; margin: 20px" />
+          </a>
+        </div>
+
+        <div class="header__menu ms-auto">
+          <ul class="header__nav mb-0">
+            <!-- Home -->
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="home.html" role="button">
+                <i class="fas fa-home"></i>
+                <span class="sr-only">Home</span>
+              </a>
+            </li>
+
+            <!-- Marketplace -->
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="explore.html">
+                <i class="fas fa-store"></i>
+                <span class="sr-only">Marketplace</span>
+              </a>
+            </li>
+
+            <!-- Profile -->
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="profile.html">
+                <i class="fas fa-user"></i>
+                <span class="sr-only">Profile</span>
+              </a>
+            </li>
+
+            <!-- Reel -->
+            <li class="header__nav-item active">
+              <a class="header__nav-link" href="reel.html">
+                <i class="fas fa-play-circle"></i>
+                <span class="sr-only">Reel</span>
+              </a>
+            </li>
+
+            <!-- Historical -->
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="historical.html">
+                <i class="fas fa-history"></i>
+                <span class="sr-only">Historical</span>
+              </a>
+            </li>
+
+            <!-- Collaboration -->
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="collaboration.html">
+                <i class="fas fa-handshake"></i>
+                <span class="sr-only">Collaboration</span>
+              </a>
+            </li>
+
+            <!-- Dashboard -->
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="dashboard.html">
+                <i class="fas fa-tachometer-alt"></i>
+                <span class="sr-only">Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__actions">
+          <div class="header__action header__action--search">
+            <button class="header__action-btn" type="button">
+              <i class="icofont-search-1"></i>
+            </button>
+          </div>
+
+          <div class="header__action header__action--profile">
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                data-bs-offset="-100,10">
+                <span><i class="icofont-user"></i></span>
+                <span class="d-none d-md-inline">Alex Joe</span>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="author.html"><span class="me-1"><i class="icofont-options"></i></span>
+                    Profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="activity.html"><span class="me-1"><i
+                        class="icofont-lightning-ray"></i></span>
+                    Activity</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="signup.html"><span class="me-1"><i
+                        class="icofont-space-shuttle"></i></span>
+                    Sign Up</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="signin.html"><span class="me-1"><i class="icofont-login"></i></span>
+                    Sign In</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Sign Out
+                    <span class="ms-1"><i class="icofont-logout"></i></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="wallet-btn">
+            <a href="wallet.html"><span><i class="icofont-wallet"></i></span>
+              <span class="d-none d-md-inline">234.98ETH</span>
+            </a>
+          </div>
+        </div>
+
+        <button class="menu-trigger header__btn" id="menu05">
           <span></span>
           <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- ===============//header section end here \\================= -->
+
+  <!-- ==========Reel Section start Here========== -->
+  <section class="reel-section">
+    <div class="main-reel">
+      <!-- Reel Item 1 -->
+      <div class="reel-item" style="padding-top: 70px">
+        <video class="reel-video" style="width: min-content" autoplay loop muted>
+          <source src="assets/images/videos/1793a7194e71717ffecc71e26114fffa.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="reel-info">
+          <h5>@artbyemily</h5>
+          <p>From blank canvas to masterpiece—watch the magic unfold!</p>
+        </div>
+        <div class="reel-actions">
+          <i class="fas fa-heart"></i> <span>325</span>
+          <!-- Likes count -->
+          <i class="fas fa-comment"></i> <span>48</span>
+          <!-- Comments count -->
+          <i class="fas fa-share"></i> <span>19</span>
+          <!-- Shares count -->
+        </div>
+      </div>
+      <!-- Reel Item 2 -->
+      <div class="reel-item" style="padding-top: 70px">
+        <video class="reel-video" style="width: min-content" autoplay loop muted>
+          <source src="assets/images/videos/art.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="reel-info">
+          <h5>@colorscapes</h5>
+          <p>
+            Layer by layer, here’s how I bring vibrant landscapes to life.
+          </p>
+        </div>
+        <div class="reel-actions">
+          <i class="fas fa-heart"></i> <span>527</span>
+          <!-- Likes count -->
+          <i class="fas fa-comment"></i> <span>76</span>
+          <!-- Comments count -->
+          <i class="fas fa-share"></i> <span>34</span>
+          <!-- Shares count -->
+        </div>
+      </div>
+      <!-- Reel Item 3 -->
+      <div class="reel-item" style="padding-top: 70px">
+        <video class="reel-video" style="width: min-content" autoplay loop muted>
+          <source src="assets/images/videos/sculpture.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="reel-info">
+          <h5>@modernartistry</h5>
+          <p>
+            Sketching, shading, and detailing: my creative process in action.
+          </p>
+        </div>
+        <div class="reel-actions">
+          <i class="fas fa-heart"></i> <span>815</span>
+          <!-- Likes count -->
+          <i class="fas fa-comment"></i> <span>112</span>
+          <!-- Comments count -->
+          <i class="fas fa-share"></i> <span>55</span>
+          <!-- Shares count -->
         </div>
       </div>
     </div>
-    <!-- preloader ending here -->
+  </section>
+  <!-- ==========Reel Section ends Here========== -->
 
-    <!-- ===============// header section start here \\================= -->
-    <header class="header">
-      <div class="container-fluid">
-        <div class="header__content">
-          <div class="header__logo">
-            <a href="index.html">
-              <img
-                src="assets/images/logo/logo.png"
-                alt="logo"
-                style="width: 150px; margin: 20px"
-              />
-            </a>
-          </div>
+  <!-- All Scripts -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/lightcase.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/countdown.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/functions.js"></script>
+</body>
 
-          <div class="header__menu ms-auto">
-            <ul class="header__nav mb-0">
-              <!-- Home -->
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="home.html" role="button">
-                  <i class="fas fa-home"></i>
-                  <span class="sr-only">Home</span>
-                </a>
-              </li>
+<!-- Mirrored from demos.codexcoder.com/labartisan/html/nft/enftomark/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Nov 2024 12:23:53 GMT -->
 
-              <!-- Marketplace -->
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="explore.html">
-                  <i class="fas fa-store"></i>
-                  <span class="sr-only">Marketplace</span>
-                </a>
-              </li>
-
-              <!-- Profile -->
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="profile.html">
-                  <i class="fas fa-user"></i>
-                  <span class="sr-only">Profile</span>
-                </a>
-              </li>
-
-              <!-- Reel -->
-              <li class="header__nav-item active">
-                <a class="header__nav-link" href="reel.html">
-                  <i class="fas fa-play-circle"></i>
-                  <span class="sr-only">Reel</span>
-                </a>
-              </li>
-
-              <!-- Historical -->
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="historical.html">
-                  <i class="fas fa-history"></i>
-                  <span class="sr-only">Historical</span>
-                </a>
-              </li>
-
-              <!-- Collaboration -->
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="collaboration.html">
-                  <i class="fas fa-handshake"></i>
-                  <span class="sr-only">Collaboration</span>
-                </a>
-              </li>
-
-              <!-- Dashboard -->
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="dashboard.html">
-                  <i class="fas fa-tachometer-alt"></i>
-                  <span class="sr-only">Dashboard</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="header__actions">
-            <div class="header__action header__action--search">
-              <button class="header__action-btn" type="button">
-                <i class="icofont-search-1"></i>
-              </button>
-            </div>
-
-            <div class="header__action header__action--profile">
-              <div class="dropdown">
-                <a
-                  class="dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  data-bs-offset="-100,10"
-                >
-                  <span><i class="icofont-user"></i></span>
-                  <span class="d-none d-md-inline">Alex Joe</span>
-                </a>
-
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="author.html"
-                      ><span class="me-1"><i class="icofont-options"></i></span>
-                      Profile</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="activity.html"
-                      ><span class="me-1"
-                        ><i class="icofont-lightning-ray"></i
-                      ></span>
-                      Activity</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="signup.html"
-                      ><span class="me-1"
-                        ><i class="icofont-space-shuttle"></i
-                      ></span>
-                      Sign Up</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="signin.html"
-                      ><span class="me-1"><i class="icofont-login"></i></span>
-                      Sign In</a
-                    >
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Sign Out
-                      <span class="ms-1"><i class="icofont-logout"></i></span
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="wallet-btn">
-              <a href="wallet.html"
-                ><span><i class="icofont-wallet"></i></span>
-                <span class="d-none d-md-inline">234.98ETH</span>
-              </a>
-            </div>
-          </div>
-
-          <button class="menu-trigger header__btn" id="menu05">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-    </header>
-    <!-- ===============//header section end here \\================= -->
-
-    <!-- ==========Reel Section start Here========== -->
-    <section class="reel-section">
-      <div class="main-reel">
-        <!-- Reel Item 1 -->
-        <div class="reel-item" style="padding-top: 70px">
-          <video
-            class="reel-video"
-            style="width: min-content"
-            autoplay
-            loop
-            muted
-          >
-            <source src="assets/videos/1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div class="reel-info">
-            <h5>@artbyemily</h5>
-            <p>From blank canvas to masterpiece—watch the magic unfold!</p>
-          </div>
-          <div class="reel-actions">
-            <i class="fas fa-heart"></i> <span>325</span>
-            <!-- Likes count -->
-            <i class="fas fa-comment"></i> <span>48</span>
-            <!-- Comments count -->
-            <i class="fas fa-share"></i> <span>19</span>
-            <!-- Shares count -->
-          </div>
-        </div>
-        <!-- Reel Item 2 -->
-        <div class="reel-item" style="padding-top: 70px">
-          <video
-            class="reel-video"
-            style="width: min-content"
-            autoplay
-            loop
-            muted
-          >
-            <source src="assets/videos/art_process_2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div class="reel-info">
-            <h5>@colorscapes</h5>
-            <p>
-              Layer by layer, here’s how I bring vibrant landscapes to life.
-            </p>
-          </div>
-          <div class="reel-actions">
-            <i class="fas fa-heart"></i> <span>527</span>
-            <!-- Likes count -->
-            <i class="fas fa-comment"></i> <span>76</span>
-            <!-- Comments count -->
-            <i class="fas fa-share"></i> <span>34</span>
-            <!-- Shares count -->
-          </div>
-        </div>
-        <!-- Reel Item 3 -->
-        <div class="reel-item" style="padding-top: 70px">
-          <video
-            class="reel-video"
-            style="width: min-content"
-            autoplay
-            loop
-            muted
-          >
-            <source src="assets/videos/art_process_3.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div class="reel-info">
-            <h5>@modernartistry</h5>
-            <p>
-              Sketching, shading, and detailing: my creative process in action.
-            </p>
-          </div>
-          <div class="reel-actions">
-            <i class="fas fa-heart"></i> <span>815</span>
-            <!-- Likes count -->
-            <i class="fas fa-comment"></i> <span>112</span>
-            <!-- Comments count -->
-            <i class="fas fa-share"></i> <span>55</span>
-            <!-- Shares count -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ==========Reel Section ends Here========== -->
-
-    <!-- All Scripts -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/lightcase.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/countdown.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/functions.js"></script>
-  </body>
-
-  <!-- Mirrored from demos.codexcoder.com/labartisan/html/nft/enftomark/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Nov 2024 12:23:53 GMT -->
 </html>
