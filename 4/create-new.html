@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <!-- Mirrored from designing-world.com/funto-v1.3.0/create-new.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Nov 2024 12:28:30 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Funto - HTML NFT Marketplace" />
+    <!-- Title-->
+    <title>Funto - HTML NFT Marketplace</title>
+    <!-- Favicon-->
+    <link
+      rel="shortcut icon"
+      href="img/core-img/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- All CSS Stylesheet-->
+    <link rel="stylesheet" href="css/all-css-libraries.css" />
+    <!-- Core Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Preloader-->
+    <div class="preloader" id="preloader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <!-- Header Area-->
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-wrapper">
+      <div class="container">
+        <div class="breadcrumb-content">
+          <h2 class="breadcrumb-title">Create New</h2>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Create</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="create-new-wrapper">
+      <div class="container">
+        <div class="row g-5 justify-content-center">
+          <div class="col-12 col-lg-8">
+            <!-- Create New Form -->
+            <div class="create-new-form border shadow-sm p-4 p-sm-5">
+              <h2 class="mb-4">Create new NFT</h2>
+              <form action="#" class="cultura-form">
+                <div class="row align-items-center">
+                  <!-- File Upload -->
+                  <div class="col-12">
+                    <div class="form-group mb-4">
+                      <label class="mb-2 fz-16" for="formFileMultiple"
+                        >Upload Your Artwork</label
+                      >
+                      <input
+                        class="form-control bg-transparent"
+                        id="formFileMultiple"
+                        type="file"
+                        multiple
+                        accept="image/*"
+                        aria-describedby="fileHelp"
+                      />
+                      <small id="fileHelp" class="form-text"
+                        >Ensure high-resolution images for quality optimization.
+                        Accepted formats: JPG, PNG.</small
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Pricing Options -->
+                  <div class="col-12">
+                    <div class="form-group mb-4">
+                      <label class="mb-2 fz-16">Pricing Model</label>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          id="inlineRadio1"
+                          type="radio"
+                          name="pricingOptions"
+                          value="fixed"
+                          checked
+                        />
+                        <label class="form-check-label" for="inlineRadio1"
+                          >Fixed Price</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          id="inlineRadio2"
+                          type="radio"
+                          name="pricingOptions"
+                          value="unlock"
+                        />
+                        <label class="form-check-label" for="inlineRadio2"
+                          >Unlock Upon Purchase</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          id="inlineRadio3"
+                          type="radio"
+                          name="pricingOptions"
+                          value="bids"
+                        />
+                        <label class="form-check-label" for="inlineRadio3"
+                          >Open for Bids</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Title -->
+                  <div class="col-12">
+                    <div class="form-group mb-4">
+                      <label class="mb-2 fz-16" for="title"
+                        >Artwork Title</label
+                      >
+                      <input
+                        class="form-control"
+                        id="title"
+                        type="text"
+                        placeholder="E.g., Majestic Sunset"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Description -->
+                  <div class="col-12">
+                    <div class="form-group mb-4">
+                      <label class="mb-2 fz-16" for="description"
+                        >Description</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="description"
+                        rows="3"
+                        placeholder="Provide a short description of your artwork"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <!-- Price -->
+                  <div class="col-12 col-md-6">
+                    <div class="form-group mb-4">
+                      <label class="mb-2 fz-16" for="price">Price (ETH)</label>
+                      <input
+                        class="form-control"
+                        id="price"
+                        type="number"
+                        step="0.001"
+                        placeholder="E.g., 0.324 ETH"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Categories -->
+                  <div class="col-12 col-md-6">
+                    <div class="form-group mb-4">
+                      <label class="mb-2 fz-16" for="categories"
+                        >Category</label
+                      >
+                      <select class="form-select" id="categories" required>
+                        <option value="art">Art</option>
+                        <option value="cards">Cards</option>
+                        <option value="collectibles">Collectibles</option>
+                        <option value="domain">Domain</option>
+                        <option value="music">Music</option>
+                        <option value="memes">Memes</option>
+                        <option value="photos">Photos</option>
+                        <option value="sports">Sports</option>
+                        <option value="videos">Videos</option>
+                        <option value="virtual-worlds">Virtual Worlds</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Dates -->
+                  <div class="col-12 col-sm-6">
+                    <div class="form-group mb-4">
+                      <label class="mb-2 fz-16" for="startingDate"
+                        >Starting Date</label
+                      >
+                      <input
+                        class="form-control"
+                        id="startingDate"
+                        type="date"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="form-group mb-4">
+                      <label class="mb-2 fz-16" for="endingDate"
+                        >Ending Date</label
+                      >
+                      <input
+                        class="form-control"
+                        id="endingDate"
+                        type="date"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Royalties -->
+                  <div class="col-12 col-lg-4">
+                    <div class="form-group mb-4">
+                      <label class="mb-2 fz-16" for="royalty"
+                        >Royalty (%)</label
+                      >
+                      <input
+                        class="form-control"
+                        id="royalty"
+                        type="number"
+                        step="0.1"
+                        max="100"
+                        placeholder="E.g., 5%"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Copies -->
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group mb-4">
+                      <label class="mb-2 fz-16" for="copies"
+                        >Number of Copies</label
+                      >
+                      <input
+                        class="form-control"
+                        id="copies"
+                        type="number"
+                        min="1"
+                        placeholder="E.g., 10"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Size -->
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group mb-4">
+                      <label class="mb-2 fz-16" for="size"
+                        >File Size (MB)</label
+                      >
+                      <input
+                        class="form-control"
+                        id="size"
+                        type="number"
+                        step="0.1"
+                        placeholder="E.g., 20MB"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Terms and Submit -->
+                  <div class="col-12 col-md-8">
+                    <div class="form-check mb-4">
+                      <input
+                        class="form-check-input"
+                        id="agreeTerms"
+                        type="checkbox"
+                        required
+                      />
+                      <label class="form-check-label" for="agreeTerms">
+                        I agree to all terms &amp; conditions and verify the
+                        originality of my submission.
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <button
+                      class="btn btn-primary rounded-pill w-100"
+                      type="submit"
+                    >
+                      Submit Artwork
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 col-sm-8 col-lg-4">
+            <!-- Preview Card -->
+            <div class="nft-card card shadow-sm">
+              <div class="card-body">
+                <div class="img-wrap">
+                  <img src="img/bg-img/17.jpg" alt="" />
+                  <!-- Badge -->
+                  <div class="badge bg-dark position-absolute">
+                    <img src="img/core-img/fire.png" alt="" />Hot bid
+                  </div>
+                </div>
+                <!-- Others Info -->
+                <div class="row gx-2 align-items-center mt-3">
+                  <div class="col-8">
+                    <span class="d-block fz-12"
+                      ><i class="bi bi-arrow-up"></i>Hightest bid 0.324
+                      ETH</span
+                    >
+                  </div>
+                  <div class="col-4 text-end">
+                    <button class="wishlist-btn" type="button">
+                      <i class="bi"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- Meta Info -->
+                <div class="row gx-2 align-items-center mt-2">
+                  <div class="col-8">
+                    <div class="name-info d-flex align-items-center">
+                      <div class="author-img position-relative">
+                        <img class="shadow" src="img/bg-img/u1.jpg" alt="" /><i
+                          class="bi bi-check position-absolute bg-success"
+                        ></i>
+                      </div>
+                      <div class="name-author">
+                        <a
+                          class="name d-block hover-primary fw-bold text-truncate"
+                          href="item-details.html"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Macaw Bird"
+                          >Macaw Bird</a
+                        ><a
+                          class="author d-block fz-12 hover-primary text-truncate"
+                          href="author.html"
+                          >@creative_art</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="price text-end">
+                      <span class="fz-12 d-block">Current Bid</span>
+                      <h6 class="mb-0">0.324 ETH</h6>
+                    </div>
+                  </div>
+                </div>
+                <!-- Button -->
+                <div class="row gx-2 align-items-center mt-3">
+                  <div class="col-6">
+                    <a class="btn btn-primary btn-sm rounded-pill" href="#"
+                      >Place bid</a
+                    >
+                  </div>
+                  <div class="col-6 text-end">
+                    <a
+                      class="btn btn-minimal btn-sm hover-primary"
+                      href="activity.html"
+                    >
+                      <i class="bi bi-activity me-1"></i>Activity</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="mb-0 mt-3 text-center">
+              <i class="bi bi-eye me-1"></i>Live Preview
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <!-- Dark Light Wrapper -->
+    <div
+      class="dark-light-wrapper"
+      data-aos="zoom-in"
+      data-aos-duration="750"
+      data-aos-delay="200"
+    >
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <h5
+            class="mb-0 text-white"
+            data-aos="fade-up"
+            data-aos-duration="750"
+            data-aos-delay="500"
+          >
+            Light mode is available!
+          </h5>
+          <!-- Switch -->
+          <div
+            class="dark-light-mode"
+            data-aos="fade-up"
+            data-aos-duration="750"
+            data-aos-delay="800"
+          >
+            <input id="darkLightSwitch" type="checkbox" />
+            <label class="shadow" for="darkLightSwitch">Toggle</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="footer-area pb-120 pt-120"
+      style="background-image: url('img/bg-img/1.jpg')"
+    ></footer>
+    <!-- Scroll To Top -->
+    <div id="scrollTopButton"><i class="bi bi-arrow-up-short"></i></div>
+    <!-- All JavaScript Files-->
+    <script src="js/all-js-libraries.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/charts.js"></script>
+  </body>
+
+  <!-- Mirrored from designing-world.com/funto-v1.3.0/create-new.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Nov 2024 12:28:30 GMT -->
+</html>
